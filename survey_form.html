@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Survey Form</title>
     </head>
@@ -7,55 +7,39 @@
         <h1>Survey Form</h1>
         <form>
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name">
-            <br>
+            <input type="text" id="name" name="name"><br>
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email">
-            </br>
-        </form>
-        <h4>How satisfied are you with our service?</h4>
-        <form>
-            <input type="radio" id="very satisfied" name="service_preference" value="very satisfied">
-            <label for="very satisfied">Very Satisfied</label>
-            <br>
+        
+            <h4>How satisfied are you with our service?</h4>
+            <input type="radio" id="very_satisfied" name="service_preference" value="very satisfied">
+            <label for="very_satisfied">Very Satisfied</label><br>
             <input type="radio" id="satisfied" name="service_preference" value="satisfied">
-            <label for="satisfied">Satisfied</label>
-            <br>
+            <label for="satisfied">Satisfied</label><br>
             <input type="radio" id="neutral" name="service_preference" value="neutral">
-            <label for="neutral">Neutral</label>
-            <br>
+            <label for="neutral">Neutral</label><br>
             <input type="radio" id="dissatisfied" name="service_preference" value="dissatisfied">
-            <label for="dissatisfied">Dissatisfied</label>
-            <br>
-            <input type="radio" id="very dissatisfied" name="service_preference" value="very dissatisfied">
-            <label for="very dissatisfied">Very Dissatisfied</label>
-        </form>
-        <h4>What features do you value most?</h4>
-        <form>
-            <input type="checkbox" id="features" name="features">
-            <label for="features"></label>Eas of Use</label>
-            <br>
-            <input type="checkbox" id="features" name="features">
-            <label for="features"></label>Design</label>
-            <br>
-            <input type="checkbox" id="features" name="features">
-            <label for="features"></label>Customer Support</label>
-        </form>
-        <form>
-            <h4><label for="describe">What best describe you?</label>
-            <select id="describe" name="describe"></h4>
+            <label for="dissatisfied">Dissatisfied</label><br>
+            <input type="radio" id="very_dissatisfied" name="service_preference" value="very dissatisfied">
+            <label for="very_dissatisfied">Very Dissatisfied</label>
+            
+            <h4>What features do you value most?</h4>
+            <input type="checkbox" id="eas" name="features">
+            <label for="eas">Eas of Use</label><br>
+            <input type="checkbox" id="design" name="features">
+            <label for="design">Design</label><br>
+            <input type="checkbox" id="support" name="features">
+            <label for="support">Customer Support</label><br>
+            
+            <br><label for="describe"><strong>What best describe you?</strong></label>
+            <select id="describe" name="describe">
                 <option value="student">Student</option>
                 <option value="professional">Professional</option>
                 <option value="hobbyist">Hobbyist</option>
                 <option value="other">Other</option>
-            </select>
-        </form>
-        <form>
-            <br>
-            <label for="message">Addition Feedback:</label>
-            <br>
-            <textarea id="message" name="message"></textarea>
-            <br>
+            </select><br><br>
+            <label for="message">Addition Feedback:</label><br>
+            <textarea id="message" name="message"></textarea><br>
             <input type="submit" value="Submit">
         </form>
     </body>
